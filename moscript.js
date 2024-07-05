@@ -84,9 +84,14 @@ mojs.addShape('e', E);
 const { approximate } = mojs.easing,
     shiftCurve = approximate(mojs.easing.path('M0,100 C50,100 50,100 50,50 C50,0 50,0 100,0')),
     scaleCurve = approximate(mojs.easing.path('M0,100 C21.3776817,95.8051376 50,77.3262711 50,-700 C50,80.1708527 76.6222458,93.9449005 100,100')),
-    charSize = 25,
+    defaultCharSize = 25,
+    mobileCharSize = 12,
     leftStep = 10,
     logo = document.querySelector('#js-logo');
+
+const isMobile = () => window.innerWidth < 600;
+
+let charSize = isMobile() ? mobileCharSize : defaultCharSize
 
 const CHAR_OPTS = {
     parent: logo,
@@ -130,7 +135,7 @@ const nCharacter = new mojs.Shape({
 }).then({
     delay: 115,
     y: { to: 0, easing: shiftCurve },
-    x: { to: -4, easing: shiftCurve },
+    x: isMobile() ? { to: 0, easing: shiftCurve } : { to: -4, easing: shiftCurve },
     scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
 }).then(CHAR_HIDE_THEN);
@@ -153,7 +158,7 @@ const oCharacter = new mojs.Shape({
 }).then({
     duration: 700,
     y: { to: 0, easing: shiftCurve },
-    x: { to: -6, easing: shiftCurve },
+    x: isMobile() ? { to: -3, easing: shiftCurve } : { to: -6, easing: shiftCurve },
     scaleY: { 1: 1, curve: scaleCShort },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
 }).then(CHAR_HIDE_THEN);
@@ -177,7 +182,7 @@ const vCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        x: { to: -10, easing: shiftCurve },
+        x: isMobile() ? { to: -7, easing: shiftCurve } : { to: -10, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -196,7 +201,7 @@ const aCharacter = new mojs.Shape({
     .then({
         delay: 116,
         y: { to: 0, easing: shiftCurve },
-        x: { to: -13, easing: shiftCurve },
+        x: isMobile() ? { to: -10, easing: shiftCurve } : { to: -13, easing: shiftCurve },
         scaleY: { 1: 1, curve: scaleCShort },
         origin: { '50% 100%': '50% 0%', easing: shiftCurve }
     }).then({ ...CHAR_HIDE_THEN, delay: 1280 });
@@ -219,7 +224,7 @@ const pCharacter = new mojs.Shape({
 }).then({
     duration: 710,
     y: { to: 0, easing: shiftCurve },
-    x: { to: -13, easing: shiftCurve },
+    x: isMobile() ? { to: -10, easing: shiftCurve } : { to: -13, easing: shiftCurve },
     scaleY: { 1: 1, curve: scaleCShort },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
 }).then(CHAR_HIDE_THEN);
@@ -243,7 +248,7 @@ const rCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        x: { to: -13, easing: shiftCurve },
+        x: isMobile() ? { to: -10, easing: shiftCurve } : { to: -13, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -267,7 +272,7 @@ const yCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        x: { to: -13, easing: shiftCurve },
+        x: isMobile() ? { to: -10, easing: shiftCurve } : { to: -13, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 100%': '50% 0%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -291,7 +296,7 @@ const mCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        x: { to: 1, easing: shiftCurve },
+        x: isMobile() ? { to: -10, easing: shiftCurve } : { to: 1, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -316,7 +321,7 @@ const eCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        x: { to: 15, easing: shiftCurve },
+        x: isMobile() ? { to: -12, easing: shiftCurve } : { to: 15, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -446,8 +451,7 @@ timeline
     .add(
         nCharacter, oCharacter, vCharacter, aCharacter, pCharacter, rCharacter, yCharacter, mCharacter, eCharacter,
         underlines, line1, line2, line3,
-        shapes,
-        logoShift
+        shapes
     );
 
 new MojsPlayer({ add: timeline, isPlaying: true, isRepeat: true, isHidden: true });
