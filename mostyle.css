@@ -30,8 +30,10 @@ body {
 }
 
 #Logomark {
-  opacity: 0; /* Initially hide the SVG */
-  animation: fadeIn 6s ease-in-out 0.5s forwards; /* Animation for fading in */
+  opacity: 0;
+  /* Initially hide the SVG */
+  animation: fadeIn 6s ease-in-out 0.5s forwards;
+  /* Animation for fading in */
   margin-top: -13rem;
 }
 
@@ -42,5 +44,11 @@ body {
 
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 250px;
   }
 }

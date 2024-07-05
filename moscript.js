@@ -135,7 +135,7 @@ const nCharacter = new mojs.Shape({
 }).then({
     delay: 115,
     y: { to: 0, easing: shiftCurve },
-    x: isMobile() ? { to: 0, easing: shiftCurve } : { to: -4, easing: shiftCurve },
+    x: isMobile() ? { to: -9, easing: shiftCurve } : { to: -4, easing: shiftCurve },
     scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
 }).then(CHAR_HIDE_THEN);
@@ -158,7 +158,7 @@ const oCharacter = new mojs.Shape({
 }).then({
     duration: 700,
     y: { to: 0, easing: shiftCurve },
-    x: isMobile() ? { to: -3, easing: shiftCurve } : { to: -6, easing: shiftCurve },
+    x: isMobile() ? { to: -9, easing: shiftCurve } : { to: -6, easing: shiftCurve },
     scaleY: { 1: 1, curve: scaleCShort },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
 }).then(CHAR_HIDE_THEN);
@@ -182,7 +182,7 @@ const vCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        x: isMobile() ? { to: -7, easing: shiftCurve } : { to: -10, easing: shiftCurve },
+        x: isMobile() ? { to: -9, easing: shiftCurve } : { to: -10, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -201,7 +201,7 @@ const aCharacter = new mojs.Shape({
     .then({
         delay: 116,
         y: { to: 0, easing: shiftCurve },
-        x: isMobile() ? { to: -10, easing: shiftCurve } : { to: -13, easing: shiftCurve },
+        x: isMobile() ? { to: -9, easing: shiftCurve } : { to: -13, easing: shiftCurve },
         scaleY: { 1: 1, curve: scaleCShort },
         origin: { '50% 100%': '50% 0%', easing: shiftCurve }
     }).then({ ...CHAR_HIDE_THEN, delay: 1280 });
@@ -224,7 +224,7 @@ const pCharacter = new mojs.Shape({
 }).then({
     duration: 710,
     y: { to: 0, easing: shiftCurve },
-    x: isMobile() ? { to: -10, easing: shiftCurve } : { to: -13, easing: shiftCurve },
+    x: isMobile() ? { to: -7, easing: shiftCurve } : { to: -13, easing: shiftCurve },
     scaleY: { 1: 1, curve: scaleCShort },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
 }).then(CHAR_HIDE_THEN);
@@ -248,7 +248,7 @@ const rCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        x: isMobile() ? { to: -10, easing: shiftCurve } : { to: -13, easing: shiftCurve },
+        x: isMobile() ? { to: -7, easing: shiftCurve } : { to: -13, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -272,7 +272,7 @@ const yCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        x: isMobile() ? { to: -10, easing: shiftCurve } : { to: -13, easing: shiftCurve },
+        x: isMobile() ? { to: -8, easing: shiftCurve } : { to: -13, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 100%': '50% 0%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -296,7 +296,7 @@ const mCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        x: isMobile() ? { to: -10, easing: shiftCurve } : { to: 1, easing: shiftCurve },
+        x: isMobile() ? { to: 0, easing: shiftCurve } : { to: 1, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -321,7 +321,7 @@ const eCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        x: isMobile() ? { to: -12, easing: shiftCurve } : { to: 15, easing: shiftCurve },
+        x: isMobile() ? { to: 9, easing: shiftCurve } : { to: 15, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -373,7 +373,7 @@ let StaggerShape = new mojs.stagger(mojs.Shape);
 
 let underlines = new StaggerShape({
     ...LINE_OPTS,
-    radius: 120,
+    radius: isMobile() ? 80 : 120,
     angle: 0,
     radiusY: 0,
     y: 30,
