@@ -20,12 +20,27 @@ body {
   /* left: 50%;
   top: 50%; */
   height: 30px;
-  width: 400px;
+  width: 450px;
   z-index: 2;
   /* margin-left: -10px;
   margin-top: -32px; */
   transform-origin: 50% 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+#Logomark {
+  opacity: 0; /* Initially hide the SVG */
+  animation: fadeIn 6s ease-in-out 0.5s forwards; /* Animation for fading in */
+  margin-top: -13rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

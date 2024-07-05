@@ -12,72 +12,79 @@ const COLORS = {
 // ADD CUSTOM SHAPES
 class N extends mojs.CustomShape {
     getShape() {
-        return '<path id="n-2" data-name="n" d="M16.72-146.3V-46.02H38.209v-78.792H65.284c16.475,0,27.362,10.315,27.362,25.786V-46.02h21.489V-99.885c0-27.792-19.483-46.415-48.708-46.415Z" transform="translate(-16.43 146.02)" fill="#707070"/>';
+        return '<path id="n-2" data-name="n" d="M16.72-146.3v57H28.934v-44.786h15.39c9.364,0,15.553,5.863,15.553,14.657V-89.3H72.091v-30.617c0-15.8-11.074-26.383-27.686-26.383Z" transform="translate(5.28 163.3)" fill="#fff"/>';
     }
 }
 mojs.addShape('n', N);
 
 class O extends mojs.CustomShape {
     getShape() {
-        return '<<path id="o-2" data-name="o" d="M30.863-98.257c0-17.637,11.665-29.3,29.3-29.3,17.5,0,29.024,11.665,29.024,29.163,0,17.637-11.665,29.163-29.3,29.163C42.389-69.233,30.863-80.759,30.863-98.257Zm-20.831,0c0,30.135,19.859,49.855,49.855,49.855,30.135,0,50.133-19.859,50.133-49.994,0-30-19.72-49.994-49.855-49.994S10.032-128.392,10.032-98.257Z" transform="translate(-10.02 148)" fill="#707070"/>';
+        return '<path id="o-2" data-name="o" d="M22.071-119.415c0-10.193,6.742-16.935,16.935-16.935,10.113,0,16.775,6.742,16.775,16.855,0,10.193-6.742,16.855-16.935,16.855C28.733-102.64,22.071-109.3,22.071-119.415Zm-12.039,0C10.032-102,21.51-90.6,38.846-90.6c17.417,0,28.975-11.478,28.975-28.895,0-17.337-11.4-28.895-28.814-28.895S10.032-136.832,10.032-119.415Z" transform="translate(10.98 165.158)" fill="#fff"/>';
     }
 }
 mojs.addShape('o', O);
 
 class V extends mojs.CustomShape {
     getShape() {
-        return '<path id="v-2" data-name="v" d="M41.659-46.02H63.435L101.541-146.3H80.052L52.547-73.955,25.042-146.3H3.553Z" transform="translate(-2.553 146.02)" fill="#707070"/>';
+        return '<path id="v-2" data-name="v" d="M25.374-88.876H37.843L59.664-146.3H47.359L31.609-104.873,15.858-146.3H3.553Z" transform="translate(18.447 163.3)" fill="#fff"/>';
     }
 }
 mojs.addShape('v', V);
 
 class A extends mojs.CustomShape {
     getShape() {
-        return '<path id="a-2" data-name="a" d="M44.087-69.534c-7.677,0-12.7-3.489-12.7-8.654,0-5.3,5.025-8.793,12.422-8.793H77.864a41.867,41.867,0,0,0,12.143-1.675v7.816c0,6.839-5.025,11.306-12.422,11.306Zm66.856-47.455c0-17.586-13.4-29.311-33.358-29.311H16.033v20.936H77.585c7.4,0,12.422,3.489,12.422,8.654,0,5.3-5.025,8.793-12.7,8.793H42.971c-19.54,0-32.521,12-32.521,29.869,0,17.726,13.26,29.45,33.079,29.45H77.585c19.959,0,33.358-11.585,33.358-28.892Z" transform="translate(-10.944 147.3)" fill="#707070"/>';
+        return '<path id="a-2" data-name="a" d="M30.135-101.375c-4.493,0-7.433-2.042-7.433-5.064,0-3.1,2.941-5.146,7.27-5.146H49.9a24.5,24.5,0,0,0,7.106-.98v4.574c0,4-2.941,6.616-7.27,6.616Zm39.126-27.772c0-10.292-7.841-17.153-19.522-17.153H13.717v12.252H49.739c4.329,0,7.27,2.042,7.27,5.064,0,3.1-2.941,5.146-7.433,5.146H29.482c-11.435,0-19.032,7.025-19.032,17.48,0,10.374,7.76,17.235,19.359,17.235h19.93c11.681,0,19.522-6.78,19.522-16.908Z" transform="translate(10.55 163.3)" fill="#fff"/>';
     }
 }
 mojs.addShape('a', A);
 
 class P extends mojs.CustomShape {
     getShape() {
-        return '<path id="p-2" data-name="p" d="M35.182-99.959v-.713c0-14.544,11.977-24.24,29.8-24.24H77.246c9.268,0,15.542,4.705,15.542,12.263,0,7.7-6.274,12.69-15.827,12.69ZM77.531-78.571c21.959,0,36.645-13.4,36.645-34.079,0-20.39-14.4-33.651-36.075-33.651H64.128c-30.229,0-50.334,18.251-50.334,45.628v54.183H35.182V-78.571Z" transform="translate(-13.794 146.3)" fill="#707070"';
+        return '<path id="p-2" data-name="p" d="M25.947-119.968v-.405c0-8.264,6.806-13.774,16.934-13.774h6.968c5.266,0,8.831,2.674,8.831,6.968,0,4.375-3.565,7.211-8.994,7.211Zm24.064,12.153c12.478,0,20.823-7.616,20.823-19.364,0-11.586-8.183-19.121-20.5-19.121H42.4c-17.177,0-28.6,10.371-28.6,25.927v30.789H25.947v-18.23Z" transform="translate(7.206 163.3)" fill="#fff"/>';
     }
 }
 mojs.addShape('p', P);
 
 class R extends mojs.CustomShape {
     getShape() {
-        return '<path id="r-2" data-name="r" d="M34.8-46.3v-50c0-16.571,11.857-28.571,29.857-28.571H109.09V-146.3H63.8c-30.143,0-50.429,20.571-50.429,50v50Z" transform="translate(-11.376 146.3)" fill="#707070"';
+        return '<path id="r-2" data-name="r" d="M25.5-89.723v-28.288c0-9.376,6.708-16.165,16.892-16.165H67.528V-146.3H41.907c-17.054,0-28.531,11.639-28.531,28.288v28.288Z" transform="translate(9.624 163.3)" fill="#fff"/>';
     }
 }
 mojs.addShape('r', R);
 
 class Y extends mojs.CustomShape {
     getShape() {
-        return '<path id="y-2" data-name="y" d="M62.018-96.16c-16.475,0-27.362-10.315-27.362-25.786V-146.3H13.167v25.213c0,27.792,19.483,46.415,48.708,46.415H82.933c-4.584,4.584-11.461,7.163-19.77,7.163H14.6V-46.02H63.307c28.365,0,47.275-17.477,47.275-43.55V-146.3H89.093v50.14Z" transform="translate(-12.167 146.3)" fill="#707070"/>';
+        return '<path id="y-2" data-name="y" d="M40.918-117.817c-9.359,0-15.544-5.859-15.544-14.649V-146.3H13.167v14.323c0,15.788,11.068,26.367,27.669,26.367H52.8c-2.6,2.6-6.51,4.069-11.231,4.069H13.981v12.207H41.65c16.113,0,26.856-9.928,26.856-24.74V-146.3H56.3v28.483Z" transform="translate(8.833 163.3)" fill="#fff"/>';
     }
 }
 mojs.addShape('y', Y);
 
 class M extends mojs.CustomShape {
     getShape() {
-        return '<path id="m-2" data-name="m" d="M57.754-88.24H70.2v-45.619H85.871c9.538,0,15.842,5.972,15.842,14.93V-88.24h12.441v-31.187c0-16.091-11.28-26.874-28.2-26.874H41.995c-16.92,0-28.2,10.783-28.2,26.874V-88.24H26.235v-30.689c0-8.958,6.3-14.93,15.842-14.93H57.754Z" transform="translate(-14.155 162.773)" fill="#707070"/>';
+        return '<path id="m-2" data-name="m" d="M57.754-88.24H70.2v-45.619H85.871c9.538,0,15.842,5.972,15.842,14.93V-88.24h12.441v-31.187c0-16.091-11.28-26.874-28.2-26.874H41.995c-16.92,0-28.2,10.783-28.2,26.874V-88.24H26.235v-30.689c0-8.958,6.3-14.93,15.842-14.93H57.754Z" transform="translate(-14.155 162.773)" fill="#fff"/>';
     }
 }
 mojs.addShape('m', M);
 
 class E extends mojs.CustomShape {
     getShape() {
-        return '<path id="e-2" data-name="e" d="M105.735-46.093V-67.566H61.5C43.321-67.566,31.3-79.448,31.3-96.2c0-16.606,11.882-28.631,29.919-28.631H69.8c9.591,0,15.317,3.579,15.317,8.875,0,5.583-6.3,9.019-15.89,9.019H52.769V-85.46H69.231c22.475,0,37.363-10.593,37.363-29.776,0-18.9-14.315-31.064-36.647-31.064H60.356c-30.205,0-50.533,20.614-50.533,50.1,0,29.633,20.614,50.1,51.105,50.1Z" transform="translate(-9.636 146.093)" fill="#707070"/>';
+        return '<path id="e-2" data-name="e" d="M64.473-89.2v-12.235h-25.2c-10.359,0-17.211-6.77-17.211-16.313,0-9.462,6.77-16.313,17.048-16.313H44c5.465,0,8.728,2.039,8.728,5.057,0,3.181-3.589,5.139-9.054,5.139h-9.38v12.235h9.38c12.806,0,21.289-6.036,21.289-16.966,0-10.767-8.157-17.7-20.881-17.7H38.616c-17.211,0-28.793,11.746-28.793,28.549,0,16.884,11.746,28.549,29.119,28.549Z" transform="translate(12.177 163.3)" fill="#fff"/>';
     }
 }
 mojs.addShape('e', E);
+
+// class Logomark extends mojs.CustomShape {
+//     getShape() {
+//         return '<path id="e-2" data-name="e" d="M64.473-89.2v-12.235h-25.2c-10.359,0-17.211-6.77-17.211-16.313,0-9.462,6.77-16.313,17.048-16.313H44c5.465,0,8.728,2.039,8.728,5.057,0,3.181-3.589,5.139-9.054,5.139h-9.38v12.235h9.38c12.806,0,21.289-6.036,21.289-16.966,0-10.767-8.157-17.7-20.881-17.7H38.616c-17.211,0-28.793,11.746-28.793,28.549,0,16.884,11.746,28.549,29.119,28.549Z" transform="translate(12.177 163.3)" fill="#fff"/>';
+//     }
+// }
+// mojs.addShape('logomark', Logomark);
 
 // VARIABLES
 const { approximate } = mojs.easing,
     shiftCurve = approximate(mojs.easing.path('M0,100 C50,100 50,100 50,50 C50,0 50,0 100,0')),
     scaleCurve = approximate(mojs.easing.path('M0,100 C21.3776817,95.8051376 50,77.3262711 50,-700 C50,80.1708527 76.6222458,93.9449005 100,100')),
-    charSize = 30,
+    charSize = 25,
     leftStep = 10,
     logo = document.querySelector('#js-logo');
 
@@ -85,9 +92,7 @@ const CHAR_OPTS = {
     parent: logo,
     isForce3d: true,
     fill: 'white',
-    radius: charSize / 2,
-    stroke: 'white',
-    strokeWidth: 2
+    radius: charSize * 1.3,
 }
 
 const CHAR_HIDE_THEN = {
@@ -125,6 +130,7 @@ const nCharacter = new mojs.Shape({
 }).then({
     delay: 115,
     y: { to: 0, easing: shiftCurve },
+    x: { to: -4, easing: shiftCurve },
     scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
 }).then(CHAR_HIDE_THEN);
@@ -147,6 +153,7 @@ const oCharacter = new mojs.Shape({
 }).then({
     duration: 700,
     y: { to: 0, easing: shiftCurve },
+    x: { to: -6, easing: shiftCurve },
     scaleY: { 1: 1, curve: scaleCShort },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
 }).then(CHAR_HIDE_THEN);
@@ -170,7 +177,7 @@ const vCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        // x:          { to: charSize, easing: shiftCurve },
+        x: { to: -10, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -189,6 +196,7 @@ const aCharacter = new mojs.Shape({
     .then({
         delay: 116,
         y: { to: 0, easing: shiftCurve },
+        x: { to: -13, easing: shiftCurve },
         scaleY: { 1: 1, curve: scaleCShort },
         origin: { '50% 100%': '50% 0%', easing: shiftCurve }
     }).then({ ...CHAR_HIDE_THEN, delay: 1280 });
@@ -211,6 +219,7 @@ const pCharacter = new mojs.Shape({
 }).then({
     duration: 710,
     y: { to: 0, easing: shiftCurve },
+    x: { to: -13, easing: shiftCurve },
     scaleY: { 1: 1, curve: scaleCShort },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
 }).then(CHAR_HIDE_THEN);
@@ -219,9 +228,9 @@ const rCharacter = new mojs.Shape({
     ...CHAR_OPTS,
     shape: 'r',
     left: 6 * leftStep + '%',
-    delay: 40,
-    duration: 580,
-    x: -200,
+    delay: 50,
+    duration: 680,
+    x: -400,
     y: { [250]: -100, easing: shiftCurve },
     scaleY: { 1: 1, curve: scaleC },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
@@ -234,7 +243,7 @@ const rCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        // x:          { to: charSize, easing: shiftCurve },
+        x: { to: -13, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -246,21 +255,21 @@ const yCharacter = new mojs.Shape({
     delay: 40,
     duration: 580,
     x: -200,
-    y: { [250]: -100, easing: shiftCurve },
+    y: { [-100]: 250, easing: shiftCurve },
     scaleY: { 1: 1, curve: scaleC },
-    origin: { '50% 100%': '50% 0%', easing: shiftCurve }
+    origin: { '50% 0%': '50% 100%', easing: shiftCurve }
 })
     .then({
         duration: 523,
         x: { to: 0, easing: shiftCurve },
         scaleX: { 1: 1, curve: scaleCShort },
-        origin: { '0% 50%': '100% 50%', easing: shiftCurve }
+        origin: { '100% 50%': '0% 50%', easing: shiftCurve }
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        // x:          { to: charSize, easing: shiftCurve },
+        x: { to: -13, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
-        origin: { '50% 0%': '50% 100%', easing: shiftCurve }
+        origin: { '50% 100%': '50% 0%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
 
 const mCharacter = new mojs.Shape({
@@ -282,7 +291,7 @@ const mCharacter = new mojs.Shape({
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        // x:          { to: charSize, easing: shiftCurve },
+        x: { to: 1, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
@@ -292,29 +301,29 @@ const eCharacter = new mojs.Shape({
     ...CHAR_OPTS,
     shape: 'e',
     left: 9 * leftStep + '%',
-    delay: 40,
+    delay: 340,
     duration: 580,
     x: -200,
-    y: { [250]: -100, easing: shiftCurve },
-    scaleY: { 1: 1, curve: scaleC },
+    y: { [350]: 100, easing: shiftCurve },
+    scaleY: { 1: 1, curve: scaleCShort },
     origin: { '50% 100%': '50% 0%', easing: shiftCurve }
 })
     .then({
-        duration: 523,
+        delay: 54,
         x: { to: 0, easing: shiftCurve },
-        scaleX: { 1: 1, curve: scaleCShort },
-        origin: { '0% 50%': '100% 50%', easing: shiftCurve }
+        scaleX: { 1: 1, curve: approximate(scaledCurve(.5)) },
+        origin: { '50% 100%': '50% 0%', easing: shiftCurve }
     })
     .then({
         y: { to: 0, easing: shiftCurve },
-        // x:          { to: charSize, easing: shiftCurve },
+        x: { to: 15, easing: shiftCurve },
         scaleY: { 1: 1, curve: approximate(scaledCurve(.5)) },
         origin: { '50% 0%': '50% 100%', easing: shiftCurve }
     }).then(CHAR_HIDE_THEN);
 
 
 
-    // LINES
+// LINES
 
 let LINE_OPTS = {
     shape: 'line',
@@ -441,4 +450,4 @@ timeline
         logoShift
     );
 
-new MojsPlayer({ add: timeline, isPlaying: true, isRepeat: true });
+new MojsPlayer({ add: timeline, isPlaying: true, isRepeat: true, isHidden: true });
